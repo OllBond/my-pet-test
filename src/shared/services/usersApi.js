@@ -5,7 +5,7 @@ export const usersInstance = axios.create({
 });
 
 export const getAllUsers = async () => {
-  const { data } = await usersInstance.get('/tweets');
+  const { data } = await usersInstance.get('/');
   console.log(data);
   return data;
 };
