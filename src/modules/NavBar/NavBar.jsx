@@ -1,12 +1,17 @@
-import { NavLink } from "react-router-dom";
-import css from "./navbar.module.css";
+import { NavLink } from 'react-router-dom';
+import { AiOutlineHome } from 'react-icons/ai';
+
+import Tweets from './Tweets/Tweets';
+
+import css from './navbar.module.css';
 
 const NavBar = () => {
   return (
     <div className={css.navbar}>
       <NavLink to="/" className={css.titleHome}>
-        Home
+        <AiOutlineHome /> Home
       </NavLink>
+      <Tweets />
     </div>
   );
 };

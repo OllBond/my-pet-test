@@ -1,9 +1,10 @@
-import { Suspense } from "react";
-import { lazy } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Suspense } from 'react';
+import { lazy } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
-const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
-const TweetsPage = lazy(() => import("./modules/NavBar/NavBar"));
+const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
+const TweetsPage = lazy(() => import('./pages/TweetsPage/TweetsPage'));
+
 const UserRoutes = () => {
   return (
     <>
