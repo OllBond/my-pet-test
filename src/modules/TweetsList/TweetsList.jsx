@@ -1,4 +1,4 @@
-import { useSelector, useDispatch, useEffect } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { getAllUsers } from 'redux/users/users-selectors';
 
 import TweetsItem from 'modules/TweetsItem/TweetsItem';
@@ -6,11 +6,7 @@ import TweetsItem from 'modules/TweetsItem/TweetsItem';
 
 const TweetsList = () => {
   const allUsers = useSelector(getAllUsers);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getAllUsers());
-  }, [dispatch]);
+  console.log(allUsers);
 
   return (
     <div>

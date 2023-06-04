@@ -9,13 +9,3 @@ export const getAllUsers = async () => {
   console.log(data);
   return data;
 };
-
-// export const addUser = async data => {
-//   const { data: result } = await usersInstance.post('/', data);
-//   return result;
-// };
-
-// export const deleteContact = async id => {
-//   const data = await usersInstance.delete(`/${id}`);
-//   return data;
-// };

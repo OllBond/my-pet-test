@@ -1,4 +1,4 @@
-import css from 'button.module.css';
+import css from './button.module.css';
 
 const Button = ({ children, type = 'submit' }) => {
   return (
