@@ -6,6 +6,6 @@ export const usersInstance = axios.create({
 
 export const getAllUsers = async () => {
   const { data } = await usersInstance.get('/');
-  console.log(data);
+  console.log('1', data);
   return data;
 };

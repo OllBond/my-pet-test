@@ -1,0 +1,37 @@
+.listContainer {
+  margin: 0 auto;
+}
+
+.list {
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+@media screen and (max-width: 767px) {
+  .listContainer {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .listContainer {
+    width: 704px;
+    margin-top: 40px;
+  }
+  .list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 283px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .listContainer {
+    width: 1248px;
+    margin-top: 42px;
+  }
+
+  .list {
+    gap: 115px;
+  }
+}

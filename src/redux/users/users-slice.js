@@ -19,6 +19,7 @@ const usersSlice = createSlice({
       .addCase(fetchAllUsers.fulfilled, (store, { payload }) => {
         store.isLoading = false;
         store.items = payload;
+        console.log('3', store.items);
       })
       .addCase(fetchAllUsers.rejected, (store, { payload }) => {
         store.isLoading = false;

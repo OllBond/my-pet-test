@@ -2,7 +2,7 @@ import css from './button.module.css';
 
 const Button = ({ children, type = 'submit' }) => {
   return (
-    <button type={type} className={css.btn}>
+    <button type={type} className={css.btnFollow}>
       {children}
     </button>
   );
