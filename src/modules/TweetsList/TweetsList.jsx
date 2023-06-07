@@ -11,11 +11,17 @@ const TweetsList = () => {
   useEffect(() => {
     dispatch(fetchAllUsers());
   }, [dispatch]);
+
   const allUsers = useSelector(getAllUsers);
   console.log('5', allUsers);
 
   return (
     <div className={css.listContainer}>
+      {/* <ul className={css.list}>
+        {allUsers.map(item => (
+          <TweetsItem key={item.id} item={item} />
+        ))}
+      </ul> */}
       <ul className={css.list}>
         {allUsers.map(({ id, user, tweets, followers, avatar }) => (
           <TweetsItem

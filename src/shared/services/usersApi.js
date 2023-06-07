@@ -9,3 +9,9 @@ export const getAllUsers = async () => {
   console.log('1', data);
   return data;
 };
+
+export const updateUserById = async ({ id, followers }) => {
+  const { data } = await usersInstance.put(`/${id}`, followers);
+  console.log(' updateUserById', data);
+  return data;
+};
