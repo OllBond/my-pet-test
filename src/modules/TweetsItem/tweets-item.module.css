@@ -24,7 +24,10 @@
   left: 36px;
   top: 28px;
 } */
-
+.imageAvatar {
+  padding: 5px 15px;
+  border-radius: 50%;
+}
 .logo {
   position: absolute;
   width: 76px;

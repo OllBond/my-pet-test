@@ -14,3 +14,15 @@ export const fetchAllUsers = createAsyncThunk(
     }
   }
 );
+export const fetchUpdateUserById = createAsyncThunk(
+  'users/fetchUpdate',
+  async ({ id, followers }, thunkAPI) => {
+    try {
+      const data = await api.updateUserById({ id, followers });
+      console.log(data);
+      return data;
+    } catch ({ response }) {
+      return thunkAPI.rejectWithValue(response.data);
+    }
+  }
+);
