@@ -15,7 +15,6 @@ const TweetsItem = ({ id, user, tweets, followers, avatar }) => {
     setUsersFollowers(prevUsersFollowers => {
       const followersNew = prevUsersFollowers + 1;
       fetchUpdateUserById({ id, followers: followersNew });
-      console.log(followersNew);
       return followersNew;
     });
   };
@@ -29,8 +28,9 @@ const TweetsItem = ({ id, user, tweets, followers, avatar }) => {
           alt="avatar"
           width="130"
         />
-        <h3 className={css.title}>{user}</h3>
+
         <div className={css.userInfo}>
+          <p className={css.title}>{user}</p>
           <p className={css.tweets}>{tweets} TWEETS</p>
           <p className={css.followers}>{usersFollowers} FOLLOWERS</p>
           <Button
