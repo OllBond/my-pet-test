@@ -1,11 +1,6 @@
-.wrapperTitleHomePage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.titleHomePage {
-  font-size: 45px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ebd8ff;
-  text-align: center;
+.homePageBlock {
+  padding: 274px 200px;
+  background-image: url('../../../assets/star2.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }

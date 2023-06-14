@@ -1,4 +1,4 @@
-import css from '../../shared/Button/button.module.css';
+import css from '../../shared/components/Button/button.module.css';
 
 const BtnLoadMore = ({ onLoadMore }) => {
   return (

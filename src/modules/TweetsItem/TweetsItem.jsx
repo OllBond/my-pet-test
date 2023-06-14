@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Button from 'shared/Button/Button';
+import Button from 'shared/components/Button/Button';
 
 import { fetchUpdateUserById } from 'redux/users/users-operations';
 
