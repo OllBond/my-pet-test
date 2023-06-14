@@ -1,29 +1,37 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+
+import BtnLoadMore from 'modules/BtnLoadMore/BtnLoadMore';
+import TweetsItem from 'modules/TweetsItem/TweetsItem';
+
 import { fetchAllUsers } from '../../redux/users/users-operations';
 import { getAllUsers } from '../../redux/users/users-selectors';
-import TweetsItem from 'modules/TweetsItem/TweetsItem';
+
 import css from './tweets-list.module.css';
 
 const TweetsList = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchAllUsers());
-  }, [dispatch]);
-
   const allUsers = useSelector(getAllUsers);
   console.log('5', allUsers);
+  const [displayedUsers, setDisplayedUsers] = useState([]);
+  const [page, setPage] = useState(1);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchAllUsers(page));
+  }, [dispatch, page]);
+
+  const onLoadMore = () => {
+    setPage(prevPage => prevPage + 1);
+  };
+
+  useEffect(() => {
+    setDisplayedUsers(allUsers.slice(0, page * 3));
+  }, [allUsers, page]);
 
   return (
     <div className={css.listContainer}>
-      {/* <ul className={css.list}>
-        {allUsers.map(item => (
-          <TweetsItem key={item.id} item={item} />
-        ))}
-      </ul> */}
       <ul className={css.list}>
-        {allUsers.map(({ id, user, tweets, followers, avatar }) => (
+        {displayedUsers.map(({ id, user, tweets, followers, avatar }) => (
           <TweetsItem
             key={id}
             user={user}
@@ -33,6 +41,7 @@ const TweetsList = () => {
           />
         ))}
       </ul>
+      <BtnLoadMore onLoadMore={onLoadMore} />
     </div>
   );
 };

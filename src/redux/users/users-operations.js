@@ -4,9 +4,9 @@ import * as api from '../../shared/services/usersApi';
 
 export const fetchAllUsers = createAsyncThunk(
   'users/fetchAll',
-  async (_, thunkAPI) => {
+  async (page, thunkAPI) => {
     try {
-      const data = await api.getAllUsers();
+      const data = await api.getAllUsers(page);
       console.log('2', data);
       return data;
     } catch ({ response }) {
