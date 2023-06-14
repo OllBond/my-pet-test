@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/my-pet-test/static/css/main.f366a4c3.css",
-    "main.js": "/my-pet-test/static/js/main.00b850c5.js",
-    "static/css/418.026bcccf.chunk.css": "/my-pet-test/static/css/418.026bcccf.chunk.css",
-    "static/js/418.234601e6.chunk.js": "/my-pet-test/static/js/418.234601e6.chunk.js",
-    "static/css/683.cc3a8505.chunk.css": "/my-pet-test/static/css/683.cc3a8505.chunk.css",
-    "static/js/683.18a0f864.chunk.js": "/my-pet-test/static/js/683.18a0f864.chunk.js",
+    "main.css": "/my-pet-test/static/css/main.ca7f00ba.css",
+    "main.js": "/my-pet-test/static/js/main.71bea134.js",
+    "static/css/418.be21d228.chunk.css": "/my-pet-test/static/css/418.be21d228.chunk.css",
+    "static/js/418.7b9f7032.chunk.js": "/my-pet-test/static/js/418.7b9f7032.chunk.js",
+    "static/css/426.af10f52b.chunk.css": "/my-pet-test/static/css/426.af10f52b.chunk.css",
+    "static/js/426.8c71a356.chunk.js": "/my-pet-test/static/js/426.8c71a356.chunk.js",
+    "static/media/star2.png": "/my-pet-test/static/media/star2.46db902d23c9ebd7a8c1.png",
     "index.html": "/my-pet-test/index.html",
-    "main.f366a4c3.css.map": "/my-pet-test/static/css/main.f366a4c3.css.map",
-    "main.00b850c5.js.map": "/my-pet-test/static/js/main.00b850c5.js.map",
-    "418.026bcccf.chunk.css.map": "/my-pet-test/static/css/418.026bcccf.chunk.css.map",
-    "418.234601e6.chunk.js.map": "/my-pet-test/static/js/418.234601e6.chunk.js.map",
-    "683.cc3a8505.chunk.css.map": "/my-pet-test/static/css/683.cc3a8505.chunk.css.map",
-    "683.18a0f864.chunk.js.map": "/my-pet-test/static/js/683.18a0f864.chunk.js.map"
+    "main.ca7f00ba.css.map": "/my-pet-test/static/css/main.ca7f00ba.css.map",
+    "main.71bea134.js.map": "/my-pet-test/static/js/main.71bea134.js.map",
+    "418.be21d228.chunk.css.map": "/my-pet-test/static/css/418.be21d228.chunk.css.map",
+    "418.7b9f7032.chunk.js.map": "/my-pet-test/static/js/418.7b9f7032.chunk.js.map",
+    "426.af10f52b.chunk.css.map": "/my-pet-test/static/css/426.af10f52b.chunk.css.map",
+    "426.8c71a356.chunk.js.map": "/my-pet-test/static/js/426.8c71a356.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f366a4c3.css",
-    "static/js/main.00b850c5.js"
+    "static/css/main.ca7f00ba.css",
+    "static/js/main.71bea134.js"
   ]
 }
