@@ -1,9 +1,10 @@
 import css from './button.module.css';
 
-const Button = ({ children, type = 'submit', onChangeFollowers }) => {
+const Button = ({ text, active, type = 'submit', onChangeFollowers }) => {
+  const following = active ? `${css.btnFollow} ${css.active}` : css.btnFollow;
   return (
-    <button type={type} className={css.btnFollow} onClick={onChangeFollowers}>
-      {children}
+    <button type={type} className={following} onClick={onChangeFollowers}>
+      {text}
     </button>
   );
 };

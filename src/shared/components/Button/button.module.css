@@ -27,6 +27,10 @@
   background-color: #471ca9;
 }
 
+.btnFollow.active {
+  color: #373737;
+  background-color: #5cd3a8;
+}
 /* .btn {
   display: flex;
   border: 1px solid;

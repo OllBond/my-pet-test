@@ -1,22 +1,23 @@
 import { useState } from 'react';
 
 import Button from 'shared/components/Button/Button';
-
-import { fetchUpdateUserById } from 'redux/users/users-operations';
+// import { fetchUpdateUserById } from 'redux/users/users-operations';
 
 import css from './tweets-item.module.css';
 
-const TweetsItem = ({ id, user, tweets, followers, avatar }) => {
+const TweetsItem = ({ user, tweets, followers, avatar }) => {
   const [usersFollowers, setUsersFollowers] = useState(followers);
-
+  const [isFollowing, setIsFollowing] = useState(false);
   // const textBtn = followers ? 'FOLLOWING' : 'FOLLOW';
 
   const onChangeFollowers = () => {
-    setUsersFollowers(prevUsersFollowers => {
-      const followersNew = prevUsersFollowers + 1;
-      fetchUpdateUserById({ id, followers: followersNew });
-      return followersNew;
-    });
+    if (isFollowing) {
+      setIsFollowing(false);
+      setUsersFollowers(prevUsersFollowers => prevUsersFollowers - 1);
+    } else {
+      setIsFollowing(true);
+      setUsersFollowers(prevUsersFollowers => prevUsersFollowers + 1);
+    }
   };
 
   return (
@@ -34,12 +35,12 @@ const TweetsItem = ({ id, user, tweets, followers, avatar }) => {
           <p className={css.tweets}>{tweets} TWEETS</p>
           <p className={css.followers}>{usersFollowers} FOLLOWERS</p>
           <Button
+            active={isFollowing}
+            text={isFollowing ? 'FOLLOWING' : 'FOLLOW'}
             className={css.btnFollow}
             type="button"
             onChangeFollowers={onChangeFollowers}
-          >
-            FOLLOW
-          </Button>
+          ></Button>
         </div>
       </div>
     </li>
