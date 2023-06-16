@@ -1,14 +1,12 @@
 import { useState } from 'react';
 
 import Button from 'shared/components/Button/Button';
-// import { fetchUpdateUserById } from 'redux/users/users-operations';
 
 import css from './tweets-item.module.css';
 
 const TweetsItem = ({ user, tweets, followers, avatar }) => {
   const [usersFollowers, setUsersFollowers] = useState(followers);
   const [isFollowing, setIsFollowing] = useState(false);
-  // const textBtn = followers ? 'FOLLOWING' : 'FOLLOW';
 
   const onChangeFollowers = () => {
     if (isFollowing) {
