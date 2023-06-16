@@ -11,8 +11,10 @@
 
 @media screen and (min-width: 768px) {
   .navbar {
-    align-items: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 80px;
     padding: 10px 20px;
   }
@@ -20,9 +22,7 @@
 
 .titleHome {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  margin-right: 300px;
   margin-bottom: 10px;
   list-style: none;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -30,4 +30,9 @@
   font-size: 30px;
   color: #ebd8ff;
   text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+  .titleHome {
+    margin-right: 300px;
+  }
 }

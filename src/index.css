@@ -1,5 +1,6 @@
 body {
-  background-color: lavender;
+  background-color: slateblue;
+  background-image: url('../assets/star.png');
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;

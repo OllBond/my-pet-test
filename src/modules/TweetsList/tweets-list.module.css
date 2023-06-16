@@ -8,21 +8,17 @@
 }
 @media screen and (max-width: 767px) {
   .listContainer {
-    max-width: 480px;
+    max-width: 390px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .listContainer {
-    width: 704px;
-    margin-top: 40px;
-  }
   .list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 283px;
     justify-content: center;
+    gap: 15px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -32,6 +28,6 @@
   }
 
   .list {
-    gap: 115px;
+    gap: 30px;
   }
 }

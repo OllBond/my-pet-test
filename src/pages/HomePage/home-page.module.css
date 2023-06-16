@@ -1,6 +1,15 @@
+.title {
+  font-size: 51px;
+  color: burlywood;
+  text-align: center;
+  margin-top: 124px;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    margin-top: 220px;
+  }
+}
 .homePageBlock {
-  padding: 274px 200px;
-  background-image: url('../../../assets/star2.png');
-  background-repeat: no-repeat;
+  padding: 400px 200px;
   background-position: center;
 }
