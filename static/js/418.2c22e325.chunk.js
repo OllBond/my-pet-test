@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[418],{418:function(e,t,a){a.r(t),a.d(t,{default:function(){return s}});var o="home-page_title__fc3KH",r="home-page_homePageBlock__mHN1t",c=a(184),s=function(){return(0,c.jsxs)("main",{children:[(0,c.jsx)("h1",{className:o,children:"Follow to your star"}),(0,c.jsx)("div",{className:r})]})}}}]);
-//# sourceMappingURL=418.2c22e325.chunk.js.map
