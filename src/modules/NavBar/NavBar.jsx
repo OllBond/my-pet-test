@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <div className={css.navbar}>
       <NavLink to="/" className={css.titleHome}>
-        <AiOutlineHome /> Home
+        <AiOutlineHome className={css.iconHome} /> Home
       </NavLink>
       <Tweets />
     </div>

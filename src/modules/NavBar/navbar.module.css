@@ -22,7 +22,8 @@
 
 .titleHome {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-start;
   margin-bottom: 10px;
   list-style: none;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -35,4 +36,7 @@
   .titleHome {
     margin-right: 300px;
   }
+}
+.iconHome {
+  margin-right: 5px;
 }

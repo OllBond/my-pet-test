@@ -54,7 +54,7 @@ const TweetsList = () => {
         ))}
       </ul>
       {loading && <Loader />}
-      <BtnLoadMore onLoadMore={onLoadMore} />
+      {!loading && <BtnLoadMore onLoadMore={onLoadMore} />}
     </div>
   );
 };
